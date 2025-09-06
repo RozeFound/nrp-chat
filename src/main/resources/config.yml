@@ -1,0 +1,20 @@
+nrp-chat-template: "<dark_gray><<player>> <message></dark_gray>"
+
+not-enough-exp-string: "You don't have enough EXP points to send this message!"
+not-enough-food-string: "You don't have enough food points to send this message!"
+
+cost-info:
+  enable: true
+  message-template: "This message has costed you <food_cost> food and <exp_cost> exp points."
+
+# it all sums up
+# for example you can take 2 food points + 500 xp per message and 1 food points + 10 xp per char
+# so for message "Hello" total of 7 food points and 550 xp will be taken
+
+per-message:
+  exp: 0
+  food: 0
+
+per-char:
+  exp: 10
+  points: 0
