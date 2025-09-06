@@ -70,6 +70,7 @@ public class NRPCommand {
       });
 
     var default_subcommand = Commands.argument("message", StringArgumentType.greedyString())
+      .requires(sender -> sender.getSender().hasPermission("nrpchat.nrp.chat"))
       .executes(ctx -> {
 
         final String message = StringArgumentType.getString(ctx, "message");
